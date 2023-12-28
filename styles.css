@@ -1,0 +1,43 @@
+html {
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+.pictureGrid {
+    display: flex; 
+    justify-content: flex-start;
+    gap: .5%;
+    width: auto;
+    height: 300px;
+}
+
+.picture {
+    width: auto; 
+    height: auto; 
+    border: .5px solid black;
+}
+
+#filmpic2 {
+    width: auto;
+}
+
+#scroll-text {
+    text-align: right;
+    white-space: nowrap;
+    transform: translateX(-100%);
+    animation: my-animation 15s linear infinite;
+}
+
+#scroll-container {
+    border: 5px black;
+    overflow: hidden;
+}
+
+@keyframes my-animation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
