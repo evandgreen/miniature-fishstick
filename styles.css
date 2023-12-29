@@ -3,12 +3,13 @@ html {
     padding: 0;
     margin: 0;
 }
-.pictureGrid {
+.pictureBox {
     display: flex; 
     justify-content: flex-start;
     gap: .5%;
     width: auto;
     height: 300px;
+    overflow: scroll;
 }
 
 .picture {
@@ -17,27 +18,27 @@ html {
     border: .5px solid black;
 }
 
-#filmpic2 {
-    width: auto;
-}
-
-#scroll-text {
-    text-align: right;
-    white-space: nowrap;
-    transform: translateX(-100%);
-    animation: my-animation 15s linear infinite;
-}
-
-#scroll-container {
-    border: 5px black;
+.wrapper {
+    max-width: 100%;
     overflow: hidden;
-}
-
-@keyframes my-animation {
-    from {
-        transform: translateX(100%);
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 45s linear infinite;
+  }
+  
+  .marquee h1 {
+    display: inline-block;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
     }
-    to {
-        transform: translateX(-100%);
+    100% {
+      transform: translate3d(-50%, 0, 0);
     }
-}
+  }
