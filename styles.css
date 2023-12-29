@@ -17,28 +17,3 @@ html {
     height: auto; 
     border: .5px solid black;
 }
-
-.wrapper {
-    max-width: 100%;
-    overflow: hidden;
-  }
-  
-  .marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: marquee 45s linear infinite;
-  }
-  
-  .marquee h1 {
-    display: inline-block;
-  }
-  
-  @keyframes marquee {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(-50%, 0, 0);
-    }
-  }
