@@ -2,11 +2,29 @@
 <html>
     <head>
         <title>evan green</title>
-        <style>* {padding: 0; margin: 0; font-family: monospace;} p {display: inline-block; text-align: left;} </style>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: monospace;
+            }
+            body {
+                background-color: #fff;
+            }
+            @media (prefers-color-scheme: dark) {
+                .dark {
+                    background-color: #1a1c1d;
+                }
+            }
+            p {
+                display: inline-block;
+                text-align: left;
+            }
+        </style>
         <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
     </head>
     
-    <body>
+    <body class="adaptive">
         <pre style="margin-top: 1rem; margin-bottom: 1rem;"><center> ___ _  _____ ____   ___ ________ ___ ___ 
 / -_) |/ / _ `/ _ \_/ _ `/ __/ -_) -_) _ \
 \__/|___/\_,_/_//_(_)_, /_/  \__/\__/_//_/
