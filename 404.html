@@ -13,9 +13,13 @@
                 background-color: #fff;
             }
             @media (prefers-color-scheme: dark) {
-                .theme.adaptive {
+                .body.adaptive {
                     color: #fff;
                     background-color: #1a1c1d;
+                }
+                
+                .a.adaptive {
+                    color: #3391FF;
                 }
             }
             p {
@@ -26,15 +30,14 @@
         <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
     </head>
     
-    <body class="theme adaptive">
+    <body class="adaptive">
         <pre style="margin-top: 0.5rem; margin-bottom: 1rem;"><center>                         ____ ___  ____
  ___ ___________  ____  / / // _ \/ / /
 / -_) __/ __/ _ \/ __/ /_  _/ // /_  _/
 \__/_/ /_/  \___/_/     /_/ \___/ /_/  </center></pre>
     <div style="text-align: center;">
-        <p>
-            sorry; this page doesn't yet exist, or was deleted.<br>
-            <a href="javascript:history.back()">go back</a> or <a href="https://evan.green">go home</a>.</p>
+        <p>sorry; this page doesn't yet exist, or was deleted.<br>
+        <a class="adaptive" href="javascript:history.back()">go back</a> or <a href="https://evan.green">go home</a>.</p>
     </div>
     </body>
 </html>
