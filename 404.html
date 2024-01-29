@@ -8,11 +8,13 @@
                 margin: 0;
                 font-family: monospace;
             }
-            body {
+            .theme {
+                color: #000;
                 background-color: #fff;
             }
             @media (prefers-color-scheme: dark) {
-                .dark {
+                .theme.adaptive {
+                    color: #fff;
                     background-color: #1a1c1d;
                 }
             }
@@ -24,7 +26,7 @@
         <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
     </head>
     
-    <body>
+    <body class="theme adaptive">
         <pre style="margin-top: 0.5rem; margin-bottom: 1rem;"><center>                         ____ ___  ____
  ___ ___________  ____  / / // _ \/ / /
 / -_) __/ __/ _ \/ __/ /_  _/ // /_  _/
